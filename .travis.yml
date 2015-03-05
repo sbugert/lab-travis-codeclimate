@@ -1,6 +1,11 @@
 language: node_js
 node_js:
-  - "0.10"
-  - "0.11"
-  - "0.12"
-  - "iojs"
+  - '0.10'
+  - '0.11'
+  - '0.12'
+  - iojs
+addons:
+  repo_token:
+    secure: "A0dtsr96h8NvMGw0ddTnuc86Dmr3JDx0ug94YQCL8/KXlw3o75O7BH+jiRfA/rmvL8YjoRPSQ5E3KUPZoZJ4yeHg20yYvDLGD/pUMgP2htbrGOgWqXaIlXClyHwj1ND9wXqZycVoo5Zjg72zhwqT+TWGH9tuct5TqOlDU0+h2VQ="
+after_script:
+  - cat lcov.info | codeclimate
