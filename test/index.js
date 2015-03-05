@@ -7,9 +7,9 @@ var lab = exports.lab = Lab.script();
 lab.experiment('Experiment', function() {
 
   lab.test('Add function', function (done) {
-    //var result = add(1, 2);
+    var result = add(1, 2);
 
-    //Code.expect(result).to.equal(3);
+    Code.expect(result).to.equal(3);
     done();
   });
 });
