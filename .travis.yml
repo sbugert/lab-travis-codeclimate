@@ -7,7 +7,6 @@ node_js:
 addons:
   code_climate:
     repo_token:
-      secure: "A0dtsr96h8NvMGw0ddTnuc86Dmr3JDx0ug94YQCL8/KXlw3o75O7BH+jiRfA/rmvL8YjoRPSQ5E3KUPZoZJ4yeHg20yYvDLGD/pUMgP2htbrGOgWqXaIlXClyHwj1ND9wXqZycVoo5Zjg72zhwqT+TWGH9tuct5TqOlDU0+h2VQ="
-
+      secure: IgtC/fOiI7cwqrvRv/uMqw556xf7uwVrRL65j/Scy2evgV7nFbn3+wr7JSVlb6RHTM0qAhpWMBzxZdLSxHH3LKvhu3cj/e+QhjyzvQx9lpu/7u3rPZ24HpQX0iBvrKU0rJOhOqsLnnpqfHDUVfwcjWstZRxOj8k9P/MbfqPM0/c=
 after_script:
-  - codeclimate < lcov.info
+  - npm run coverage | codeclimate

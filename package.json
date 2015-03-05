@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "main": "index",
   "scripts": {
-    "test": "./node_modules/lab/bin/lab -c -v -L -l -r lcov > lcov.info"
+    "test": "./node_modules/lab/bin/lab -c -v -L -l",
+    "coverage": "./node_modules/lab/bin/lab -r lcov"
   },
   "repository": {
     "type": "git",
